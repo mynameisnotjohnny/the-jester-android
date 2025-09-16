@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common USB-to-Serial adapters -->
+    <usb-device vendor-id="1027" product-id="24577" /> <!-- FTDI -->
+    <usb-device vendor-id="9025" product-id="67" /> <!-- Prolific -->
+    <usb-device vendor-id="4292" product-id="60000" /> <!-- CH340 -->
+    <usb-device vendor-id="6790" product-id="29987" /> <!-- CP210x -->
+    <usb-device vendor-id="9025" product-id="67" /> <!-- PL2303 -->
+</resources>
