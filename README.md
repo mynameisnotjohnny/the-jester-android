@@ -30,30 +30,47 @@ The app features a clean, modern interface with connection status indicators, st
 - The Jester device (ESP32 with nRF24L01 modules)
 - USB cable to connect The Jester to your Android device
 
-## 🚀 Installation
+## 📥 Installation
+
+### Download from GitHub Releases (Recommended)
+
+1. **Download the APK**: Go to the [Releases page](https://github.com/mynameisnotjohnny/the-jester-android/releases) and download the latest `app-debug.apk` file.
+
+2. **Enable Unknown Sources**: On your Android device:
+   - Go to **Settings** → **Security** → **Install unknown apps** (or **Settings** → **Apps** → **Special access** → **Install unknown apps**)
+   - Enable installation from your file manager or browser
+
+3. **Install the APK**:
+   - Download the APK file to your Android device
+   - Open your file manager and navigate to the downloaded APK
+   - Tap the APK file and follow the installation prompts
+   - Grant any necessary permissions when prompted
+
+4. **Launch the App**: Once installed, find "The Jester" in your app drawer and launch it.
 
 ### Prerequisites
 
-- Android Studio Arctic Fox or later
-- Android SDK API level 23+ (Android 6.0)
-- USB OTG support on your Android device
+- Android device with USB OTG support (Android 6.0+)
+- USB OTG cable or adapter
+- The Jester device (ESP32 with nRF24L01 modules)
+- USB cable to connect The Jester to your Android device
 
-### Building from Source
+### Building from Source (For Developers)
 
-1. Clone this repository:
+If you want to build the app yourself:
+
+1. **Prerequisites**:
+   - Android Studio Arctic Fox or later
+   - Android SDK API level 23+ (Android 6.0)
+
+2. **Clone and Build**:
    ```bash
    git clone https://github.com/mynameisnotjohnny/the-jester-android.git
    cd the-jester-android
-   ```
-
-2. Open the project in Android Studio
-
-3. Build and install the APK:
-   ```bash
    ./gradlew assembleDebug
    ```
 
-4. Install on your device:
+3. **Install on Device**:
    ```bash
    adb install app/build/outputs/apk/debug/app-debug.apk
    ```
